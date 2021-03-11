@@ -1,0 +1,64 @@
+==============================
+webpack-crash-course (01)
+==============================
+git clone https://github.com/nakasatoshi/webpack-crash-course.git
+cd webpack-crash-course/
+git branch
+git checkout -b getting-start-before-webpack
+git branch -a
+
+npm init -y
+npm info webpack
+npm install --save-dev webpack@5.24.0
+npm info webpack-cli
+npm install --save-dev webpack-cli@4.5.0
+
+touch index.html
+mkdir src
+touch src/index.js
+
+npm info live-server
+npm install --seve-dev live-server@1.2.1
+./node_modules/.bin/live-server
+npx live-server
+
+git add .
+git diff --cached
+git commit -m 'implement simple html'
+git push -u origin HEAD
+
+
+==============================
+webpack-crash-course (02)
+==============================
+
+
+vi webpach.config.js
+
+モジュールバンドルの対象を指定する
+entry 
+
+vi src/index.js
+vi dist/index.html
+
+git diff dist/index.html
+git diff src/index.js
+
+npx webpack
+npx live-server
+
+vi webpack.config.js
+npx webpack --config ./webpack.config.js --mode development
+
+git add .
+git status
+vi .gitignore
+git status
+git add .
+git diff --cached
+git commit -m 'implement getting started after webpack'
+git push -u origin HEAD
+git checkout -
+
+
+

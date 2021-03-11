@@ -59,6 +59,6 @@ git diff --cached
 git commit -m 'implement getting started after webpack'
 git push -u origin HEAD
 git checkout -
-
-
+git merge --no-ff - -m 'merge bramch into master'
+git push origin HEAD
 
